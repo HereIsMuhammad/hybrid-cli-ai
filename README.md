@@ -10,13 +10,11 @@
 [![macOS](https://img.shields.io/badge/macOS-Supported-000000?style=for-the-badge&logo=apple&logoColor=white)]()
 [![Version](https://img.shields.io/badge/Version-0.1.0-blue?style=for-the-badge)]()
 
-# 🖥️ hybrid-cli-ai — Hybrid AI Terminal Assistant
+# 🖥️ Hybrid AI Terminal Assistant
 
 Turn plain language into the exact terminal command you need — automatically using **Groq Cloud** (fast, free) when available, or falling back to a fully **offline Ollama model** when it's not.
 
-No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`, or anything else — just describe what you want, in whatever language feels natural.
-
----
+No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`, or anything else, just describe what you want, in whatever language feels natural.
 
 ## ✨ Features
 
@@ -30,8 +28,6 @@ No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`
 - 📜 **Command History** — every generated command is logged locally; view or clear it anytime
 - 🎨 **Clean Terminal UI** — syntax-highlighted, readable output via Rich
 
----
-
 ## 📦 Installation
 
 ```bash
@@ -39,8 +35,6 @@ git clone https://github.com/<your-username>/hybrid-cli-ai.git
 cd hybrid-cli-ai
 pip install -e .
 ```
-
----
 
 ## 🔑 Setup — Groq API Key (Cloud Mode)
 
@@ -54,8 +48,6 @@ $env:GROQ_API_KEY="your_key_here"          # PowerShell
 ```
 
 > ⚠️ Never hardcode your API key in the code, and never commit it to GitHub.
-
----
 
 ## 📴 Offline Mode Setup (Ollama)
 
@@ -89,8 +81,6 @@ ai "your query" --local --model qwen2.5-coder:1.5b
 ```
 
 > Small models like `qwen2:0.5b` are fast and lightweight but occasionally struggle to follow instructions strictly. If you see "The model didn't return a usable command," try a larger model.
-
----
 
 ## 🚀 Usage
 
@@ -135,8 +125,6 @@ D:                    124G  2.2G  122G   2% /d
 
 > **Note:** Cloud mode (Groq's larger model) handles mixed-language and Roman Urdu prompts noticeably better than small local models. If you're using `--local` with a tiny model like `qwen2:0.5b`, stick closer to plain English for best results — bigger local models (e.g. `qwen2.5-coder:1.5b` or larger) handle multilingual prompts more reliably too.
 
----
-
 ## ⚙️ How It Works
 
 ```
@@ -150,7 +138,6 @@ Prompt → Shell Detection (Git Bash / PowerShell / CMD / macOS / Linux)
 - If neither Ollama nor a `GROQ_API_KEY` is set up, the tool shows clear setup instructions for both options instead of failing silently.
 - Output cleaning is strict: if the model returns an explanation instead of a command, the tool reports failure rather than risk running the wrong thing.
 
----
 
 ## 🛡️ Safety Note
 
@@ -160,8 +147,6 @@ This tool can execute AI-generated shell commands directly (with `--run` or afte
 
 PRs and issues are welcome! Open a GitHub Issue for bugs or feature requests.
 
----
-
 ## 📄 License
 
-MIT License — see [LICENSE](LICENSE) for details.
+MIT License see [LICENSE](LICENSE) for details.
