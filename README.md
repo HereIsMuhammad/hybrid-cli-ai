@@ -31,7 +31,7 @@ No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/HereIsMuhammad/hybrid-cli-ai.git
+git clone [https://github.com/HereIsMuhammad/hybrid-cli-ai.git](https://github.com/HereIsMuhammad/hybrid-cli-ai.git)
 cd hybrid-cli-ai
 pip install -e .
 ```
