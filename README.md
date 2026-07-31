@@ -10,7 +10,7 @@
 [![macOS](https://img.shields.io/badge/macOS-Supported-000000?style=for-the-badge&logo=apple&logoColor=white)]()
 [![Version](https://img.shields.io/badge/Version-0.1.0-blue?style=for-the-badge)]()
 
-# 🖥️ Hybrid AI Terminal Assistant
+# 🖥️ Hybrid CLI AI  
 
 Turn plain language into the exact terminal command you need automatically using **Groq Cloud** (fast, free) when available, or falling back to a fully **offline Ollama model** when it's not.
 
