@@ -141,7 +141,7 @@ Prompt → Shell Detection (Git Bash / PowerShell / CMD / macOS / Linux)
 
 ## 🛡️ Safety Note
 
-This tool can execute AI-generated shell commands directly (with `--run` or after confirmation). Always review the suggested command before running it — especially for destructive operations like delete, format, or killing processes. Avoid `--run` with vague or ambiguous prompts.
+This tool can execute AI-generated shell commands directly (with `--run` or after confirmation). Always review the suggested command before running it especially for destructive operations like delete, format, or killing processes. Avoid `--run` with vague or ambiguous prompts.
 
 ## 🤝 Contributing
 
