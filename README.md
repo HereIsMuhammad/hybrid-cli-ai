@@ -12,7 +12,7 @@
 
 # 🖥️ Hybrid AI Terminal Assistant
 
-Turn plain language into the exact terminal command you need — automatically using **Groq Cloud** (fast, free) when available, or falling back to a fully **offline Ollama model** when it's not.
+Turn plain language into the exact terminal command you need automatically using **Groq Cloud** (fast, free) when available, or falling back to a fully **offline Ollama model** when it's not.
 
 No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`, or anything else, just describe what you want, in whatever language feels natural.
 
