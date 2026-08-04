@@ -18,15 +18,15 @@ No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`
 
 ## ✨ Features
 
-- 🧠 **Smart Auto Mode** — automatically prefers a locally running Ollama model (free, offline) if available, otherwise falls back to Groq Cloud
-- 🌐 **Cloud Mode (`--cloud`)** — force Groq's fast, free API (`llama-3.3-70b-versatile`)
-- 📴 **Offline Mode (`--local`)** — force a local Ollama model, zero internet required
-- 🗣️ **Multilingual Prompts** — write your request in English, Urdu, Hindi, Roman Urdu, or mixed language — the model understands intent, not just keywords
-- 🔍 **Precise Shell Detection** — tells the AI exactly whether it's talking to Git Bash, PowerShell, CMD, macOS, or Linux, so commands are actually correct for that shell
-- 🧹 **Robust Output Cleaning** — strips markdown fences and filters out explanatory sentences, so only a real command is ever returned (never runs raw AI chatter as a command)
-- ⚡ **Auto-Run Option** — skip the confirmation prompt and execute immediately (`--run`)
-- 📜 **Command History** — every generated command is logged locally; view or clear it anytime
-- 🎨 **Clean Terminal UI** — syntax-highlighted, readable output via Rich
+- 🧠 **Smart Auto Mode**: automatically prefers a locally running Ollama model (free, offline) if available, otherwise falls back to Groq Cloud
+- 🌐 **Cloud Mode (`--cloud`)**: force Groq's fast, free API (`llama-3.3-70b-versatile`)
+- 📴 **Offline Mode (`--local`)**: force a local Ollama model, zero internet required
+- 🗣️ **Multilingual Prompts**: write your request in English, Urdu, Hindi, Roman Urdu, or mixed language; the model understands intent, not just keywords
+- 🔍 **Precise Shell Detection**: tells the AI exactly whether it's talking to Git Bash, PowerShell, CMD, macOS, or Linux, so commands are actually correct for that shell
+- 🧹 **Robust Output Cleaning**: strips markdown fences and filters out explanatory sentences, so only a real command is ever returned (never runs raw AI chatter as a command)
+- ⚡ **Auto-Run Option**: skip the confirmation prompt and execute immediately (`--run`)
+- 📜 **Command History**: every generated command is logged locally; view or clear it anytime
+- 🎨 **Clean Terminal UI**: syntax-highlighted, readable output via Rich
 
 ## 📦 Installation
 
@@ -85,7 +85,7 @@ ai "your query" --local --model qwen2.5-coder:1.5b
 ## 🚀 Usage
 
 ```bash
-# Auto mode — uses local Ollama if it's running, otherwise falls back to Groq Cloud
+# Auto mode: uses local Ollama if it's running, otherwise falls back to Groq Cloud
 ai "list all files modified today"
 
 # Force Groq Cloud explicitly
@@ -123,7 +123,7 @@ C:/Program Files/Git  100G   96G  4.3G  96% /
 D:                    124G  2.2G  122G   2% /d
 ```
 
-> **Note:** Cloud mode (Groq's larger model) handles mixed-language and Roman Urdu prompts noticeably better than small local models. If you're using `--local` with a tiny model like `qwen2:0.5b`, stick closer to plain English for best results — bigger local models (e.g. `qwen2.5-coder:1.5b` or larger) handle multilingual prompts more reliably too.
+> **Note:** Cloud mode (Groq's larger model) handles mixed-language and Roman Urdu prompts noticeably better than small local models. If you're using `--local` with a tiny model like `qwen2:0.5b`, stick closer to plain English for best results; bigger local models (e.g. `qwen2.5-coder:1.5b` or larger) handle multilingual prompts more reliably too.
 
 ## ⚙️ How It Works
 
@@ -141,7 +141,7 @@ Prompt → Shell Detection (Git Bash / PowerShell / CMD / macOS / Linux)
 
 ## 🛡️ Safety Note
 
-This tool can execute AI-generated shell commands directly (with `--run` or after confirmation). Always review the suggested command before running it especially for destructive operations like delete, format, or killing processes. Avoid `--run` with vague or ambiguous prompts.
+This tool can execute AI-generated shell commands directly (with `--run` or after confirmation). Always review the suggested command before running it, especially for destructive operations like delete, format, or killing processes. Avoid `--run` with vague or ambiguous prompts.
 
 ## 🤝 Contributing
 
@@ -149,4 +149,4 @@ PRs and issues are welcome! Open a GitHub Issue for bugs or feature requests.
 
 ## 📄 License
 
-MIT License see [LICENSE](LICENSE) for details.
+MIT License, see [LICENSE](LICENSE) for details.
