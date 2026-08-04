@@ -36,7 +36,7 @@ cd hybrid-cli-ai
 pip install -e .
 ```
 
-## 🔑 Setup — Groq API Key (Cloud Mode)
+## 🔑 Setup: Groq API Key (Cloud Mode)
 
 1. Get a free API key from the [Groq Console](https://console.groq.com/)
 2. Set it as an environment variable:
