@@ -1,4 +1,4 @@
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)]
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Groq](https://img.shields.io/badge/Groq-Cloud%20API-F55036?style=for-the-badge)](https://groq.com/)
 [![Ollama](https://img.shields.io/badge/Ollama-Offline%20Mode-000000?style=for-the-badge&logo=ollama&logoColor=white)](https://ollama.com/)
