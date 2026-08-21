@@ -1,3 +1,9 @@
+<div align="center">
+
+# 🖥️ Hybrid CLI AI
+
+### Turn plain language into the exact terminal command you need, automatically using Groq Cloud or a fully offline Ollama model.
+
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![Groq](https://img.shields.io/badge/Groq-Cloud%20API-F55036?style=for-the-badge)](https://groq.com/)
@@ -10,7 +16,7 @@
 [![macOS](https://img.shields.io/badge/macOS-Supported-000000?style=for-the-badge&logo=apple&logoColor=white)]()
 [![Version](https://img.shields.io/badge/Version-0.1.0-blue?style=for-the-badge)]()
 
-# 🖥️ Hybrid CLI AI  
+</div>
 
 Turn plain language into the exact terminal command you need automatically using **Groq Cloud** (fast, free) when available, or falling back to a fully **offline Ollama model** when it's not.
 
@@ -31,7 +37,7 @@ No need to remember flags or syntax for `ls`, `Get-ChildItem`, `findstr`, `grep`
 ## 📦 Installation
 
 ```bash
-git clone [https://github.com/HereIsMuhammad/hybrid-cli-ai.git](https://github.com/HereIsMuhammad/hybrid-cli-ai.git)
+git clone https://github.com/HereIsMuhammad/hybrid-cli-ai.git
 cd hybrid-cli-ai
 pip install -e .
 ```
@@ -138,7 +144,6 @@ Prompt → Shell Detection (Git Bash / PowerShell / CMD / macOS / Linux)
 - If neither Ollama nor a `GROQ_API_KEY` is set up, the tool shows clear setup instructions for both options instead of failing silently.
 - Output cleaning is strict: if the model returns an explanation instead of a command, the tool reports failure rather than risk running the wrong thing.
 
-
 ## 🛡️ Safety Note
 
 This tool can execute AI-generated shell commands directly (with `--run` or after confirmation). Always review the suggested command before running it, especially for destructive operations like delete, format, or killing processes. Avoid `--run` with vague or ambiguous prompts.
@@ -150,3 +155,9 @@ PRs and issues are welcome! Open a GitHub Issue for bugs or feature requests.
 ## 📄 License
 
 MIT License, see [LICENSE](LICENSE) for details.
+
+<div align="center">
+
+### ⭐ If this repo helped you, consider giving it a star!
+
+</div>
